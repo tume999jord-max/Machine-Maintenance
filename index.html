@@ -35,18 +35,17 @@ h1{font-size:24px;font-weight:600;letter-spacing:-.3px;line-height:1.3}
 h1 span{color:var(--red)}
 .hero-sub{color:var(--muted);font-size:13px;margin-top:7px;line-height:1.7}
 .hero-stats{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
-.hstat{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 18px;text-align:center;min-width:80px}
+.hstat{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 18px;text-align:center}
 .hstat-val{font-size:22px;font-weight:600}
 .hstat-label{font-size:11px;color:var(--muted);margin-top:3px}
 .c-blue{color:var(--blue)}.c-green{color:var(--green)}.c-warn{color:var(--warn)}.c-red{color:var(--red)}
 .hero-right{display:flex;flex-direction:column;gap:8px;min-width:160px}
-.qbtn{display:flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 15px;cursor:pointer;font-size:13px;color:var(--text);width:100%;transition:border-color .15s;text-align:left}
+.qbtn{display:flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 15px;cursor:pointer;font-size:13px;color:var(--text);width:100%;transition:border-color .15s}
 .qbtn:hover{border-color:var(--blue)}
 .qbtn i{font-size:16px;color:var(--blue)}
-.ext-link-icon{font-size:11px;color:var(--muted);margin-left:auto}
 
 /* NAV */
-.nav-wrap{background:var(--surface);border-bottom:1px solid var(--border);padding:0 32px;position:sticky;top:0;z-index:100}
+.nav-wrap{background:var(--surface);border-bottom:1px solid var(--border);padding:0 32px}
 .nav-inner{max-width:1100px;margin:0 auto;display:flex;overflow-x:auto}
 .tab{padding:12px 18px;font-size:13px;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;display:flex;align-items:center;gap:7px;white-space:nowrap;transition:color .15s}
 .tab.active{color:var(--text);border-bottom-color:var(--red)}
@@ -63,8 +62,7 @@ h1 span{color:var(--red)}
 
 /* SUMMARY CARDS */
 .sum-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:28px}
-.sum-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;transition:border-color .15s}
-.sum-card:hover{border-color:var(--blue)}
+.sum-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
 .sum-card-label{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:5px;margin-bottom:6px}
 .sum-card-val{font-size:22px;font-weight:600}
 .sum-card-sub{font-size:11px;color:var(--muted);margin-top:4px}
@@ -86,7 +84,6 @@ h1 span{color:var(--red)}
 .b-done{background:#122111;color:var(--green);border:1px solid #2d5a2d}
 .b-pending{background:#2A2314;color:var(--warn);border:1px solid #5a4a14}
 .b-open{background:#0D1F36;color:var(--blue);border:1px solid #1f4080}
-.b-purple{background:#1A1028;color:var(--purple);border:1px solid #4a2870}
 
 /* TOOLS GRID */
 .tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
@@ -116,26 +113,10 @@ select option{background:var(--card)}
 .btn-green{background:var(--green);color:#0D1117}
 .btn-purple{background:#7C3AED;color:#fff}
 .recent-list{margin-top:14px;border-top:1px solid var(--border);padding-top:12px}
-.recent-label{font-size:11px;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.recent-label{font-size:11px;color:var(--muted);margin-bottom:8px}
 .recent-item{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:12px}
 .recent-item:last-child{border:none}
 .ri-val{font-size:11px;color:var(--muted)}
-
-/* LIVE TABLE */
-.live-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
-.live-table th{text-align:left;padding:7px 10px;color:var(--muted);font-size:10px;font-weight:600;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:.05em}
-.live-table td{padding:8px 10px;border-bottom:1px solid rgba(48,54,61,.5);vertical-align:middle}
-.live-table tr:last-child td{border:none}
-.live-table tr:hover td{background:rgba(88,166,255,.04)}
-
-/* STATUS PILLS */
-.pill{font-size:10px;padding:2px 8px;border-radius:8px;white-space:nowrap;font-weight:500}
-.pill-green{background:#122111;color:var(--green);border:1px solid #2d5a2d}
-.pill-warn{background:#2A2314;color:var(--warn);border:1px solid #5a4a14}
-.pill-blue{background:#0D1F36;color:var(--blue);border:1px solid #1f4080}
-.pill-red{background:#2A0E0E;color:var(--red);border:1px solid #7a2020}
-.pill-purple{background:#1A1028;color:var(--purple);border:1px solid #4a2870}
-.pill-gray{background:var(--card);color:var(--muted);border:1px solid var(--border)}
 
 /* PM ALERTS */
 .pm-item{background:var(--surface);border-radius:7px;padding:11px 14px;margin-bottom:8px}
@@ -151,12 +132,6 @@ select option{background:var(--card)}
 .fbtn{background:var(--card);color:var(--muted);border:1px solid var(--border);border-radius:6px;padding:5px 14px;font-size:12px;cursor:pointer;transition:all .15s}
 .fbtn.active{background:var(--blue);color:#0D1117;border-color:var(--blue)}
 
-/* LOADING SKELETON */
-.skel{background:linear-gradient(90deg,var(--card) 25%,var(--surface) 50%,var(--card) 75%);background-size:200%;border-radius:5px;animation:shimmer 1.2s infinite}
-@keyframes shimmer{0%{background-position:200%}100%{background-position:-200%}}
-.skel-text{height:13px;width:80%;margin:4px 0}
-.skel-num{height:26px;width:50px}
-
 /* TOAST */
 .toast{position:fixed;bottom:24px;right:24px;background:var(--card);border-radius:9px;padding:11px 18px;font-size:13px;display:none;align-items:center;gap:9px;z-index:999;box-shadow:0 4px 24px rgba(0,0,0,.5)}
 .toast.success{border:1px solid var(--green);color:var(--green)}
@@ -166,30 +141,6 @@ select option{background:var(--card)}
 /* SPINNER */
 .spin{display:inline-block;width:14px;height:14px;border:2px solid currentColor;border-top-color:transparent;border-radius:50%;animation:spin .7s linear infinite;flex-shrink:0}
 @keyframes spin{to{transform:rotate(360deg)}}
-
-/* RELOAD BTN */
-.reload-btn{background:none;border:1px solid var(--border);border-radius:6px;color:var(--muted);padding:3px 8px;font-size:11px;cursor:pointer;display:flex;align-items:center;gap:4px;transition:all .15s}
-.reload-btn:hover{color:var(--text);border-color:var(--blue)}
-
-/* DATA STATUS */
-.data-status{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);margin-bottom:18px}
-.data-dot{width:6px;height:6px;border-radius:50%;background:var(--green)}
-.data-dot.loading{background:var(--warn);animation:pulse 1s infinite}
-.data-dot.error{background:var(--red)}
-
-/* STAT SKELETON */
-.stat-skel{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
-
-/* OPEN LINK BTN */
-.open-btn{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--blue);background:none;border:none;cursor:pointer;padding:0;text-decoration:none}
-.open-btn:hover{text-decoration:underline}
-
-/* BARS */
-.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-.bar-label{font-size:11px;color:var(--muted);width:80px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.bar-track{flex:1;background:var(--border);border-radius:3px;height:7px;overflow:hidden}
-.bar-fill{height:100%;border-radius:3px;transition:width .5s ease}
-.bar-pct{font-size:10px;color:var(--muted);width:30px;text-align:right}
 
 /* FOOTER */
 footer{text-align:center;padding:24px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);margin-top:40px}
@@ -210,20 +161,19 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:12px;border-t
     <div class="hero-left">
       <div class="hero-badge"><span class="pulse"></span> ระบบออนไลน์ · อัปเดตแบบ Real-time</div>
       <h1>แผนก <span>Machine Maintenance</span></h1>
-      <p class="hero-sub">ศูนย์กลางการบำรุงรักษา ซ่อมแซม และจัดการอะไหล่เครื่องจักร<br>ข้อมูลดึงตรงจาก Google Sheets แบบ Real-time</p>
-      <div class="hero-stats" id="hero-stats">
-        <!-- filled by JS -->
-        <div class="hstat"><div class="hstat-val c-blue skel skel-num">&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="hstat-label">สั่งอะไหล่ทั้งหมด</div></div>
-        <div class="hstat"><div class="hstat-val c-green skel skel-num">&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="hstat-label">งานซ่อมค้างอยู่</div></div>
-        <div class="hstat"><div class="hstat-val c-warn skel skel-num">&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="hstat-label">รออนุมัติ PR/PO</div></div>
-        <div class="hstat"><div class="hstat-val c-red skel skel-num">&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="hstat-label">เปลี่ยนอะไหล่เดือนนี้</div></div>
+      <p class="hero-sub">ศูนย์กลางการบำรุงรักษา ซ่อมแซม และจัดการอะไหล่เครื่องจักร<br>ทุกการบันทึกเชื่อมตรงสู่ Google Sheets แบบ Real-time</p>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-val c-blue" id="s-repair">—</div><div class="hstat-label">งานซ่อมค้าง</div></div>
+        <div class="hstat"><div class="hstat-val c-green" id="s-order">—</div><div class="hstat-label">สั่งอะไหล่ทั้งหมด</div></div>
+        <div class="hstat"><div class="hstat-val" style="color:var(--purple)" id="s-replace">—</div><div class="hstat-label">เปลี่ยนอะไหล่</div></div>
+        <div class="hstat"><div class="hstat-val c-red" id="s-pending">—</div><div class="hstat-label">งานเร่งด่วน</div></div>
       </div>
     </div>
     <div class="hero-right">
-      <button class="qbtn" onclick="switchTab('repair')"><i class="ti ti-tool"></i> แจ้งซ่อมเครื่องจักร</button>
+      <button class="qbtn" onclick="switchTab('repair')"><i class="ti ti-tool"></i> บันทึกการซ่อม</button>
       <button class="qbtn" onclick="switchTab('order')"><i class="ti ti-shopping-cart"></i> สั่งอะไหล่</button>
-      <button class="qbtn" onclick="switchTab('replace')"><i class="ti ti-refresh"></i> บันทึกเปลี่ยนอะไหล่</button>
-      <button class="qbtn" onclick="loadAllData(); switchTab('home')"><i class="ti ti-refresh"></i> รีเฟรชข้อมูล</button>
+      <button class="qbtn" onclick="switchTab('replace')"><i class="ti ti-refresh"></i> เปลี่ยนอะไหล่</button>
+      <button class="qbtn" onclick="switchTab('activity')"><i class="ti ti-history"></i> กิจกรรมล่าสุด</button>
     </div>
   </div>
 </div>
@@ -241,189 +191,114 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:12px;border-t
 
 <!-- ===== HOME ===== -->
 <div class="content-wrap panel active" id="panel-home">
-
-  <!-- data status row -->
-  <div class="data-status">
-    <div class="data-dot loading" id="data-dot"></div>
-    <span id="data-status-text">กำลังดึงข้อมูล...</span>
-    <button class="reload-btn" onclick="loadAllData()"><i class="ti ti-refresh" style="font-size:11px"></i> รีเฟรช</button>
-    <span id="last-updated" style="margin-left:auto"></span>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px">
+    <div class="sec-title" style="margin:0;flex:1">สรุปข้อมูลปัจจุบัน (Real-time)</div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span id="last-refresh" style="font-size:11px;color:var(--muted)">กำลังโหลด...</span>
+      <button onclick="loadLiveData()" style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:5px 12px;font-size:12px;color:var(--text);cursor:pointer;display:flex;align-items:center;gap:5px;font-family:inherit">
+        <i class="ti ti-refresh" style="font-size:13px"></i> รีเฟรช
+      </button>
+    </div>
   </div>
-
-  <div class="sec-title" id="month-title">สรุปสถิติประจำเดือน</div>
-
-  <!-- SUMMARY CARDS — 3 ระบบ -->
-  <div class="sum-grid" id="sum-grid">
-    <!-- ระบบสั่งอะไหล่ (Code.gs) -->
+  <div class="sum-grid">
     <div class="sum-card">
-      <div class="sum-card-label"><i class="ti ti-package" style="color:var(--green)"></i> สั่งอะไหล่ (รายการทั้งหมด)</div>
-      <div class="sum-card-val c-green" id="sc-order-total">—</div>
-      <div class="sum-card-sub" id="sc-order-sub">กำลังโหลด...</div>
+      <div class="sum-card-label"><i class="ti ti-tool" style="color:var(--blue)"></i> งานซ่อมค้าง</div>
+      <div class="sum-card-val c-blue" id="stat-repair">—</div>
+      <div class="sum-card-sub">งานที่ยังไม่เสร็จ</div>
     </div>
     <div class="sum-card">
-      <div class="sum-card-label"><i class="ti ti-clock" style="color:var(--warn)"></i> รอดำเนินการ (PR/PO)</div>
-      <div class="sum-card-val c-warn" id="sc-order-pending">—</div>
-      <div class="sum-card-sub" id="sc-order-pending-sub">กำลังโหลด...</div>
+      <div class="sum-card-label"><i class="ti ti-package" style="color:var(--green)"></i> สั่งอะไหล่</div>
+      <div class="sum-card-val c-green" id="stat-order">—</div>
+      <div class="sum-card-sub" id="stat-avg">มูลค่ารวม</div>
     </div>
     <div class="sum-card">
-      <div class="sum-card-label"><i class="ti ti-currency-baht" style="color:var(--blue)"></i> มูลค่าสั่งซื้อรวม+VAT</div>
-      <div class="sum-card-val c-blue" id="sc-order-value" style="font-size:15px">—</div>
-      <div class="sum-card-sub" id="sc-order-value-sub">กำลังโหลด...</div>
-    </div>
-    <!-- ระบบแจ้งซ่อม (Code.gs #2) -->
-    <div class="sum-card">
-      <div class="sum-card-label"><i class="ti ti-tool" style="color:var(--blue)"></i> งานซ่อมค้างอยู่</div>
-      <div class="sum-card-val c-blue" id="sc-repair-pending">—</div>
-      <div class="sum-card-sub" id="sc-repair-sub">กำลังโหลด...</div>
-    </div>
-    <!-- ระบบเปลี่ยนอะไหล่ (Code.gs #3) -->
-    <div class="sum-card">
-      <div class="sum-card-label"><i class="ti ti-refresh" style="color:var(--purple)"></i> เปลี่ยนอะไหล่เดือนนี้</div>
-      <div class="sum-card-val" style="color:var(--purple)" id="sc-replace-month">—</div>
-      <div class="sum-card-sub" id="sc-replace-sub">กำลังโหลด...</div>
+      <div class="sum-card-label"><i class="ti ti-refresh" style="color:var(--purple)"></i> เปลี่ยนอะไหล่</div>
+      <div class="sum-card-val" style="color:var(--purple)" id="stat-replace">—</div>
+      <div class="sum-card-sub">รายการทั้งหมด</div>
     </div>
     <div class="sum-card">
-      <div class="sum-card-label"><i class="ti ti-box" style="color:var(--purple)"></i> จำนวนชิ้นอะไหล่เดือนนี้</div>
-      <div class="sum-card-val" style="color:var(--purple)" id="sc-replace-qty">—</div>
-      <div class="sum-card-sub" id="sc-replace-qty-sub">กำลังโหลด...</div>
+      <div class="sum-card-label"><i class="ti ti-alert-triangle" style="color:var(--warn)"></i> งานเร่งด่วน</div>
+      <div class="sum-card-val c-warn" id="s-pending-home">—</div>
+      <div class="sum-card-sub">ต้องดำเนินการ</div>
     </div>
   </div>
 
-  <!-- ORDER STATUS BREAKDOWN -->
-  <div class="sec-title">สถานะการสั่งอะไหล่ (แยกตามขั้นตอน)</div>
-  <div class="sum-grid" id="order-status-grid" style="margin-bottom:28px">
-    <div class="sum-card"><div class="sum-card-label">รอเปิด PR</div><div class="sum-card-val" id="st-wait">—</div></div>
-    <div class="sum-card"><div class="sum-card-label">รออนุมัติ PR</div><div class="sum-card-val c-warn" id="st-prwait">—</div></div>
-    <div class="sum-card"><div class="sum-card-label">รอเปิด PO</div><div class="sum-card-val c-warn" id="st-poopen">—</div></div>
-    <div class="sum-card"><div class="sum-card-label">รออนุมัติ PO</div><div class="sum-card-val c-blue" id="st-poappr">—</div></div>
-    <div class="sum-card"><div class="sum-card-label">รอซัพส่งของ</div><div class="sum-card-val c-blue" id="st-supp">—</div></div>
-    <div class="sum-card"><div class="sum-card-label">ได้รับแล้ว</div><div class="sum-card-val c-green" id="st-recv">—</div></div>
-  </div>
-
-  <!-- LIVE ACTIVITY FEED -->
-  <div class="sec-title" style="margin-bottom:12px">
-    กิจกรรมล่าสุด (รวมทุกระบบ)
-    <button class="reload-btn" onclick="loadAllData()" style="margin-left:8px;text-transform:none;font-weight:400"><i class="ti ti-refresh" style="font-size:11px"></i> รีเฟรช</button>
-  </div>
-  <div class="act-list" id="home-activity">
-    <div style="padding:20px;text-align:center;color:var(--muted);font-size:12px">
-      <span class="spin" style="display:inline-block;margin-right:8px"></span> กำลังดึงข้อมูล...
+  <div class="sec-title">กิจกรรมล่าสุด (จาก Google Sheets)</div>
+  <div class="act-list" id="activity-home">
+    <div style="text-align:center;padding:28px;color:var(--muted);font-size:13px;display:flex;align-items:center;justify-content:center;gap:10px">
+      <span class="spin" style="width:16px;height:16px;border-width:2px;display:inline-block"></span>
+      กำลังดึงข้อมูลจาก Google Sheets...
     </div>
   </div>
-
-  <!-- REPAIR STATUS TABLE -->
-  <div class="sec-title" style="margin-top:28px">งานซ่อมที่ยังค้างอยู่</div>
-  <div class="tool-card" style="margin-bottom:24px">
-    <div class="tc-body" style="padding:0;overflow-x:auto">
-      <table class="live-table" id="repair-table">
-        <thead>
-          <tr>
-            <th>เครื่องจักร</th>
-            <th>ชนิด</th>
-            <th>ช่าง</th>
-            <th>วันเริ่ม</th>
-            <th>อาการ</th>
-            <th>เวลาที่ผ่านไป</th>
-          </tr>
-        </thead>
-        <tbody id="repair-tbody">
-          <tr><td colspan="6" style="text-align:center;color:var(--muted);padding:20px">กำลังโหลด...</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- RECENT ORDERS TABLE -->
-  <div class="sec-title">รายการสั่งอะไหล่ล่าสุด (10 รายการ)</div>
-  <div class="tool-card" style="margin-bottom:24px">
-    <div class="tc-body" style="padding:0;overflow-x:auto">
-      <table class="live-table" id="orders-table">
-        <thead>
-          <tr>
-            <th>แผนก</th>
-            <th>PR No.</th>
-            <th>รายการ</th>
-            <th>Vender</th>
-            <th>ราคารวม+VAT</th>
-            <th>สถานะ</th>
-          </tr>
-        </thead>
-        <tbody id="orders-tbody">
-          <tr><td colspan="6" style="text-align:center;color:var(--muted);padding:20px">กำลังโหลด...</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- RECENT REPLACE TABLE -->
-  <div class="sec-title">การเปลี่ยนอะไหล่ล่าสุด (10 รายการ)</div>
-  <div class="tool-card" style="margin-bottom:24px">
-    <div class="tc-body" style="padding:0;overflow-x:auto">
-      <table class="live-table" id="replace-table">
-        <thead>
-          <tr>
-            <th>วันที่</th>
-            <th>ทะเบียนเครื่อง</th>
-            <th>ชนิด</th>
-            <th>อะไหล่</th>
-            <th>สาเหตุ</th>
-            <th>จำนวน</th>
-            <th>ช่าง</th>
-          </tr>
-        </thead>
-        <tbody id="replace-tbody">
-          <tr><td colspan="7" style="text-align:center;color:var(--muted);padding:20px">กำลังโหลด...</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
 </div>
 
-<!-- ===== REPAIR TAB ===== -->
+<!-- ===== REPAIR ===== -->
 <div class="content-wrap panel" id="panel-repair">
-  <div class="sec-title">ระบบแจ้งซ่อมเครื่องจักร</div>
+  <div class="sec-title">บันทึกการซ่อม</div>
   <div class="tools-grid">
     <div class="tool-card">
       <div class="tc-head">
         <div class="tc-icon tci-blue"><i class="ti ti-tool"></i></div>
-        <div>
-          <div class="tc-title">แจ้งซ่อม / ดูสถานะงานซ่อม</div>
-          <div class="tc-sub">เปิดระบบแจ้งซ่อมเครื่องจักร (Apps Script)</div>
-        </div>
+        <div><div class="tc-title">แบบฟอร์มซ่อมเครื่องจักร</div><div class="tc-sub">บันทึกตรงสู่ Google Sheets</div></div>
       </div>
       <div class="tc-body">
-        <p style="color:var(--muted);font-size:13px;line-height:1.7;margin-bottom:14px">ระบบแจ้งซ่อมรวมถึง: บันทึกงานซ่อม, ดูสถานะงานค้าง, บันทึกเวลาเสร็จ, สรุปเวลาซ่อมรายเดือน และ Export CSV</p>
-        <a href="javascript:void(0)" onclick="openSystem('repair')" class="btn-submit btn-blue" style="text-decoration:none">
-          <i class="ti ti-external-link"></i> เปิดระบบแจ้งซ่อม
-        </a>
+        <div class="form-row"><label>วันที่ซ่อม</label><input type="date" id="r-date"></div>
+        <div class="form-row"><label>ชื่อเครื่องจักร / รหัส</label><input type="text" id="r-machine" placeholder="เช่น CNC-02, ปั๊ม HY-03"></div>
+        <div class="form-row"><label>อาการเสีย / ปัญหา</label><input type="text" id="r-problem" placeholder="อธิบายอาการที่พบ"></div>
+        <div class="form-row-2">
+          <div><label>ช่างผู้รับผิดชอบ</label><input type="text" id="r-tech" placeholder="ชื่อช่าง"></div>
+          <div><label>เวลาที่ใช้ (ชม.)</label><input type="number" id="r-hours" placeholder="0.0" step="0.5" min="0"></div>
+        </div>
+        <div class="form-row"><label>วิธีแก้ไข / สรุปงาน</label><input type="text" id="r-solution" placeholder="บอกวิธีการแก้ไข"></div>
+        <div class="form-row">
+          <label>สถานะ</label>
+          <select id="r-status">
+            <option value="เสร็จแล้ว">เสร็จแล้ว</option>
+            <option value="กำลังดำเนินการ">กำลังดำเนินการ</option>
+            <option value="รอดำเนินการ">รอดำเนินการ</option>
+          </select>
+        </div>
+        <button class="btn-submit btn-blue" id="btn-repair" onclick="submitRepair()">
+          <i class="ti ti-device-floppy"></i> บันทึกการซ่อม
+        </button>
         <div class="recent-list">
-          <div class="recent-label">
-            งานซ่อมค้างอยู่
-            <span id="repair-pending-count" style="color:var(--warn);font-weight:600">—</span>
-          </div>
-          <div id="repair-recent-list">
-            <div style="color:var(--muted);font-size:12px;padding:8px 0">กำลังโหลด...</div>
-          </div>
+          <div class="recent-label">รายการล่าสุด</div>
+          <div class="recent-item"><span>ปั๊มไฮดรอลิค #HY-03</span><span class="ri-val">วันนี้ · 1.5 ชม.</span></div>
+          <div class="recent-item"><span>มอเตอร์ 5.5kW Line B</span><span class="ri-val">10 มิ.ย. · 3 ชม.</span></div>
+          <div class="recent-item"><span>CNC-01 แกน X เสีย</span><span class="ri-val">8 มิ.ย. · 5 ชม.</span></div>
         </div>
       </div>
     </div>
+
     <div class="tool-card">
       <div class="tc-head">
         <div class="tc-icon tci-blue"><i class="ti ti-chart-bar"></i></div>
-        <div><div class="tc-title">สถิติงานซ่อมค้าง</div><div class="tc-sub">ข้อมูล Real-time</div></div>
+        <div><div class="tc-title">สถิติการซ่อมเดือนนี้</div><div class="tc-sub">มิถุนายน 2568</div></div>
       </div>
       <div class="tc-body">
         <div style="display:flex;flex-direction:column;gap:10px">
           <div style="background:var(--surface);border-radius:7px;padding:12px 14px">
-            <div style="font-size:11px;color:var(--muted);margin-bottom:10px">งานซ่อมตามเครื่อง (Top 5)</div>
-            <div id="repair-bars">
-              <div style="color:var(--muted);font-size:12px">กำลังโหลด...</div>
+            <div style="font-size:11px;color:var(--muted);margin-bottom:10px">งานซ่อมตามเครื่อง</div>
+            <div id="bars-repair"></div>
+          </div>
+          <div style="background:var(--surface);border-radius:7px;padding:12px 14px">
+            <div style="font-size:11px;color:var(--muted);margin-bottom:8px">อัตราการเสร็จงาน</div>
+            <div style="display:flex;gap:10px;align-items:center">
+              <div style="flex:1;background:var(--border);border-radius:4px;height:8px;overflow:hidden">
+                <div style="background:var(--green);height:100%;width:81%;border-radius:4px"></div>
+              </div>
+              <span style="font-size:12px;color:var(--green);font-weight:500">81%</span>
             </div>
           </div>
           <div style="background:var(--surface);border-radius:7px;padding:12px 14px">
-            <div style="font-size:11px;color:var(--muted);margin-bottom:4px">งานซ่อมค้างอยู่ทั้งหมด</div>
-            <div style="font-size:26px;font-weight:600;color:var(--warn)" id="repair-count-big">—</div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px">
+              <span style="font-size:12px;color:var(--muted)">เฉลี่ยเวลาต่องาน</span>
+              <span style="font-size:13px;font-weight:500;color:var(--blue)">2.4 ชม.</span>
+            </div>
+            <div style="display:flex;justify-content:space-between">
+              <span style="font-size:12px;color:var(--muted)">งานซ่อมทั้งหมดเดือนนี้</span>
+              <span style="font-size:13px;font-weight:500;color:var(--text)">12 งาน</span>
+            </div>
           </div>
         </div>
       </div>
@@ -431,61 +306,79 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:12px;border-t
   </div>
 </div>
 
-<!-- ===== ORDER TAB ===== -->
+<!-- ===== ORDER ===== -->
 <div class="content-wrap panel" id="panel-order">
-  <div class="sec-title">ระบบสั่งอะไหล่</div>
+  <div class="sec-title">บันทึกการสั่งอะไหล่</div>
   <div class="tools-grid">
     <div class="tool-card">
       <div class="tc-head">
         <div class="tc-icon tci-green"><i class="ti ti-shopping-cart"></i></div>
-        <div>
-          <div class="tc-title">จัดการรายการสั่งอะไหล่</div>
-          <div class="tc-sub">เปิดระบบสั่งอะไหล่ช่างเทคนิค (Apps Script)</div>
-        </div>
+        <div><div class="tc-title">แบบฟอร์มสั่งซื้ออะไหล่</div><div class="tc-sub">บันทึกตรงสู่ Google Sheets</div></div>
       </div>
       <div class="tc-body">
-        <p style="color:var(--muted);font-size:13px;line-height:1.7;margin-bottom:14px">ระบบสั่งอะไหล่รวมถึง: เพิ่ม/แก้ไข/ลบรายการ, ติดตาม PR/PO, แสดงสถานะ 6 ขั้นตอน, แจ้งเตือนอีเมล และกรองข้อมูล</p>
-        <a href="javascript:void(0)" onclick="openSystem('order')" class="btn-submit btn-green" style="text-decoration:none">
-          <i class="ti ti-external-link"></i> เปิดระบบสั่งอะไหล่
-        </a>
+        <div class="form-row"><label>วันที่สั่ง</label><input type="date" id="o-date"></div>
+        <div class="form-row"><label>ชื่ออะไหล่ / รหัสสินค้า</label><input type="text" id="o-part" placeholder="เช่น Oil Seal 45×65×10, V-Belt B68"></div>
+        <div class="form-row-2">
+          <div><label>จำนวน</label><input type="number" id="o-qty" placeholder="0" min="1" oninput="calcTotal()"></div>
+          <div><label>ราคา/หน่วย (บาท)</label><input type="number" id="o-price" placeholder="0.00" step="0.01" oninput="calcTotal()"></div>
+        </div>
+        <div class="form-row"><label>ซัพพลายเออร์</label><input type="text" id="o-supplier" placeholder="ชื่อผู้จำหน่าย"></div>
+        <div class="form-row"><label>หมายเหตุ / เหตุผลการสั่ง</label><input type="text" id="o-note" placeholder="ระบุเหตุผลหรือรายละเอียด"></div>
+        <div class="form-row">
+          <label>สถานะ</label>
+          <select id="o-status">
+            <option value="รอดำเนินการ">รอดำเนินการ</option>
+            <option value="สั่งซื้อแล้ว">สั่งซื้อแล้ว</option>
+            <option value="รอของ">รอของ</option>
+            <option value="ได้รับแล้ว">ได้รับแล้ว</option>
+          </select>
+        </div>
+        <div class="total-box">
+          <span>มูลค่ารวม</span>
+          <span class="total-val" id="o-total">0 บาท</span>
+        </div>
+        <button class="btn-submit btn-green" id="btn-order" onclick="submitOrder()">
+          <i class="ti ti-device-floppy"></i> บันทึกคำสั่งซื้อ
+        </button>
         <div class="recent-list">
-          <div class="recent-label">รายการสั่งล่าสุด</div>
-          <div id="order-recent-list">
-            <div style="color:var(--muted);font-size:12px;padding:8px 0">กำลังโหลด...</div>
-          </div>
+          <div class="recent-label">คำสั่งซื้อล่าสุด</div>
+          <div class="recent-item"><span>Oil Seal 45×65×10 (×20)</span><span class="ri-val">รอของ · 1,800 บ.</span></div>
+          <div class="recent-item"><span>Bearing 6205 (×10)</span><span class="ri-val">ได้รับแล้ว · 2,500 บ.</span></div>
+          <div class="recent-item"><span>Filter HYD-10 (×5)</span><span class="ri-val">ได้รับแล้ว · 3,750 บ.</span></div>
         </div>
       </div>
     </div>
+
     <div class="tool-card">
       <div class="tc-head">
         <div class="tc-icon tci-green"><i class="ti ti-packages"></i></div>
-        <div><div class="tc-title">สรุปสถานะการสั่งซื้อ</div><div class="tc-sub">ข้อมูล Real-time</div></div>
+        <div><div class="tc-title">สรุปการสั่งซื้อเดือนนี้</div><div class="tc-sub">มิถุนายน 2568</div></div>
       </div>
       <div class="tc-body">
         <div style="display:flex;flex-direction:column;gap:8px">
           <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
             <span style="font-size:12px;color:var(--muted)">รายการทั้งหมด</span>
-            <span style="font-weight:500" id="ord-total-side">—</span>
+            <span style="font-weight:500">28 รายการ</span>
+          </div>
+          <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
+            <span style="font-size:12px;color:var(--muted)">มูลค่ารวม</span>
+            <span style="font-weight:500;color:var(--green)">84,500 บาท</span>
+          </div>
+          <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
+            <span style="font-size:12px;color:var(--muted)">รอการจัดส่ง</span>
+            <span style="font-weight:500;color:var(--warn)">5 รายการ</span>
           </div>
           <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
             <span style="font-size:12px;color:var(--muted)">ได้รับแล้ว</span>
-            <span style="font-weight:500;color:var(--green)" id="ord-recv-side">—</span>
-          </div>
-          <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
-            <span style="font-size:12px;color:var(--muted)">รอดำเนินการ (รวม)</span>
-            <span style="font-weight:500;color:var(--warn)" id="ord-pend-side">—</span>
-          </div>
-          <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
-            <span style="font-size:12px;color:var(--muted)">มูลค่ารวม+VAT</span>
-            <span style="font-weight:500;color:var(--green)" id="ord-value-side">—</span>
+            <span style="font-weight:500;color:var(--green)">23 รายการ</span>
           </div>
           <div style="background:var(--surface);border-radius:7px;padding:11px 14px">
             <div style="font-size:11px;color:var(--muted);margin-bottom:8px">สัดส่วนการรับของ</div>
             <div style="display:flex;gap:10px;align-items:center">
               <div style="flex:1;background:var(--border);border-radius:4px;height:8px;overflow:hidden">
-                <div id="ord-bar" style="background:var(--green);height:100%;width:0%;border-radius:4px;transition:width .5s"></div>
+                <div style="background:var(--green);height:100%;width:82%;border-radius:4px"></div>
               </div>
-              <span style="font-size:12px;color:var(--green);font-weight:500" id="ord-pct">0%</span>
+              <span style="font-size:12px;color:var(--green);font-weight:500">82%</span>
             </div>
           </div>
         </div>
@@ -494,305 +387,251 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:12px;border-t
   </div>
 </div>
 
-<!-- ===== REPLACE TAB ===== -->
+<!-- ===== REPLACE ===== -->
 <div class="content-wrap panel" id="panel-replace">
-  <div class="sec-title">ระบบบันทึกเปลี่ยนอะไหล่</div>
+  <div class="sec-title">บันทึกการเปลี่ยนอะไหล่</div>
   <div class="tools-grid">
     <div class="tool-card">
       <div class="tc-head">
         <div class="tc-icon tci-purple"><i class="ti ti-refresh"></i></div>
-        <div>
-          <div class="tc-title">บันทึกการเปลี่ยนอะไหล่</div>
-          <div class="tc-sub">เปิดระบบบันทึกเปลี่ยนอะไหล่ (Apps Script)</div>
-        </div>
+        <div><div class="tc-title">แบบฟอร์มเปลี่ยนอะไหล่</div><div class="tc-sub">บันทึกตรงสู่ Google Sheets</div></div>
       </div>
       <div class="tc-body">
-        <p style="color:var(--muted);font-size:13px;line-height:1.7;margin-bottom:14px">ระบบเปลี่ยนอะไหล่รวมถึง: บันทึกการเปลี่ยน, กรองตามแผนก/ทะเบียนเครื่อง, รายงานรายวัน/รายเดือน และ Export Excel/PDF</p>
-        <a href="javascript:void(0)" onclick="openSystem('replace')" class="btn-submit btn-purple" style="text-decoration:none">
-          <i class="ti ti-external-link"></i> เปิดระบบเปลี่ยนอะไหล่
-        </a>
-        <div class="recent-list">
-          <div class="recent-label">เปลี่ยนอะไหล่ล่าสุด</div>
-          <div id="replace-recent-list">
-            <div style="color:var(--muted);font-size:12px;padding:8px 0">กำลังโหลด...</div>
+        <div class="form-row"><label>วันที่เปลี่ยน</label><input type="date" id="p-date"></div>
+        <div class="form-row"><label>เครื่องจักร / รหัส</label><input type="text" id="p-machine" placeholder="เช่น CNC-02, Gear Box #2"></div>
+        <div class="form-row"><label>อะไหล่ที่เปลี่ยน</label><input type="text" id="p-part" placeholder="ชื่ออะไหล่และรหัส"></div>
+        <div class="form-row-2">
+          <div><label>จำนวนที่ใช้</label><input type="number" id="p-qty" placeholder="0" min="1"></div>
+          <div><label>ช่างผู้ทำ</label><input type="text" id="p-tech" placeholder="ชื่อช่าง"></div>
+        </div>
+        <div class="form-row-2">
+          <div>
+            <label>อะไหล่จาก</label>
+            <select id="p-source">
+              <option value="คลังสินค้า">คลังสินค้า</option>
+              <option value="สั่งซื้อใหม่">สั่งซื้อใหม่</option>
+              <option value="ยืมชั่วคราว">ยืมชั่วคราว</option>
+            </select>
           </div>
+          <div><label>รอบ PM ถัดไป</label><input type="date" id="p-next"></div>
+        </div>
+        <div class="form-row"><label>หมายเหตุ</label><input type="text" id="p-note" placeholder="รายละเอียดเพิ่มเติม"></div>
+        <button class="btn-submit btn-purple" id="btn-replace" onclick="submitReplace()">
+          <i class="ti ti-device-floppy"></i> บันทึกการเปลี่ยนอะไหล่
+        </button>
+        <div class="recent-list">
+          <div class="recent-label">การเปลี่ยนล่าสุด</div>
+          <div class="recent-item"><span>V-Belt B68 · CNC-02</span><span class="ri-val">เมื่อวาน · วิชัย</span></div>
+          <div class="recent-item"><span>Bearing 6205 · ปั๊ม P-01</span><span class="ri-val">5 มิ.ย. · สมชาย</span></div>
+          <div class="recent-item"><span>Oil Filter · Gear Box #1</span><span class="ri-val">1 มิ.ย. · ประสิทธิ์</span></div>
         </div>
       </div>
     </div>
+
     <div class="tool-card">
       <div class="tc-head">
         <div class="tc-icon tci-purple"><i class="ti ti-calendar-stats"></i></div>
-        <div><div class="tc-title">สรุปการเปลี่ยนเดือนนี้</div><div class="tc-sub">ข้อมูล Real-time</div></div>
+        <div><div class="tc-title">กำหนด PM ที่ใกล้มาถึง</div><div class="tc-sub">ใน 30 วันข้างหน้า</div></div>
       </div>
       <div class="tc-body">
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
-            <span style="font-size:12px;color:var(--muted)">รายการทั้งหมดเดือนนี้</span>
-            <span style="font-weight:500;color:var(--purple)" id="rep-count-side">—</span>
-          </div>
-          <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
-            <span style="font-size:12px;color:var(--muted)">จำนวนชิ้นรวม</span>
-            <span style="font-weight:500;color:var(--purple)" id="rep-qty-side">—</span>
-          </div>
-          <div style="background:var(--surface);border-radius:7px;padding:11px 14px;display:flex;justify-content:space-between">
-            <span style="font-size:12px;color:var(--muted)">เครื่องที่เปลี่ยน</span>
-            <span style="font-weight:500" id="rep-machine-side">—</span>
-          </div>
-          <div style="background:var(--surface);border-radius:7px;padding:12px 14px">
-            <div style="font-size:11px;color:var(--muted);margin-bottom:8px">เครื่องที่เปลี่ยนบ่อยสุด</div>
-            <div id="replace-bars"><div style="color:var(--muted);font-size:12px">กำลังโหลด...</div></div>
-          </div>
+        <div class="pm-item urgent">
+          <div class="pm-name">มอเตอร์ 5.5kW Line A</div>
+          <div class="pm-detail">เปลี่ยนน้ำมัน — ครบกำหนด 15 มิ.ย.</div>
+          <div class="pm-status" style="color:var(--red)">⚠ เกินกำหนด 3 วัน</div>
+        </div>
+        <div class="pm-item soon">
+          <div class="pm-name">Gear Box #2</div>
+          <div class="pm-detail">เปลี่ยนน้ำมันเกียร์ — ครบกำหนด 20 มิ.ย.</div>
+          <div class="pm-status" style="color:var(--warn)">เหลือ 8 วัน</div>
+        </div>
+        <div class="pm-item ok">
+          <div class="pm-name">CNC-01 ระบบ Coolant</div>
+          <div class="pm-detail">ล้างถัง + เติมน้ำยา — ครบกำหนด 30 มิ.ย.</div>
+          <div class="pm-status" style="color:var(--blue)">เหลือ 18 วัน</div>
+        </div>
+        <div class="pm-item ok">
+          <div class="pm-name">ปั๊ม P-01</div>
+          <div class="pm-detail">ตรวจสอบ Seal — ครบกำหนด 5 ก.ค.</div>
+          <div class="pm-status" style="color:var(--blue)">เหลือ 23 วัน</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ===== ACTIVITY TAB ===== -->
+<!-- ===== ACTIVITY ===== -->
 <div class="content-wrap panel" id="panel-activity">
-  <div class="sec-title">ประวัติกิจกรรมทั้งหมด (รวมทุกระบบ)</div>
+  <div class="sec-title">ประวัติกิจกรรมทั้งหมด</div>
   <div class="filter-bar">
     <button class="fbtn active" onclick="filterAct('all',this)">ทั้งหมด</button>
     <button class="fbtn" onclick="filterAct('repair',this)"><i class="ti ti-tool"></i> ซ่อม</button>
     <button class="fbtn" onclick="filterAct('order',this)"><i class="ti ti-shopping-cart"></i> สั่งอะไหล่</button>
     <button class="fbtn" onclick="filterAct('replace',this)"><i class="ti ti-refresh"></i> เปลี่ยนอะไหล่</button>
   </div>
-  <div class="act-list" id="act-full">
-    <div style="padding:24px;text-align:center;color:var(--muted);font-size:12px">
-      <span class="spin" style="display:inline-block;margin-right:8px"></span> กำลังดึงข้อมูล...
-    </div>
-  </div>
+  <div class="act-list" id="act-full"></div>
 </div>
 
-<footer>Machine Maintenance Portal · ข้อมูลดึงตรงจาก Google Apps Script · เชื่อมต่อ 3 ระบบ</footer>
+<footer>Machine Maintenance Portal · เชื่อมต่อ Google Sheets แบบ Real-time · พัฒนาด้วย Google Apps Script</footer>
 
 <!-- TOAST -->
 <div class="toast" id="toast">
   <i class="ti ti-check" id="toast-icon"></i>
-  <span id="toast-msg">โหลดข้อมูลสำเร็จ</span>
+  <span id="toast-msg">บันทึกสำเร็จ</span>
 </div>
 
 <script>
-// =====================================================
-//  SYSTEM URLS — เปลี่ยน URL ตามระบบของตัวเอง
-// =====================================================
-const SYS_URLS = {
-  // ระบบสั่งอะไหล่ (Code.gs ที่ 1) — getOrders, getDepts, getVenders
-  order_app: 'https://script.google.com/macros/s/AKfycbxKowSZnyL1Kj1lpMiWfeWlJ3YYaG-Cg5ajwMCLvXjx1_8uSV-KSmmTh5J6HOxOVF2N/exec',
-
-  // ระบบแจ้งซ่อม (Code.gs ที่ 2) — getRepairStatus, getMachineNumbers
-  repair_app: 'https://script.google.com/macros/s/AKfycbxewR7ivnxoYGH65baxlHrmbFjCypY_kg-nTsBuGvCUm-Z0U2W1yR_-_fEOEtp7GFMjqQ/exec',
-
-  // ระบบเปลี่ยนอะไหล่ (Code.gs ที่ 3) — getDailyReport, getMonthlyReport
-  replace_app: 'https://script.google.com/macros/s/AKfycbwBSLceXacaX3xb-mrvbj_Yfv3ERZk9tgRMxD900mSiXtDjpp0AF3NItpEu6c6StWGfng/exec'
+// ===== APPS SCRIPT URLs =====
+const URLS = {
+  order:   'https://script.google.com/macros/s/AKfycbxKowSZnyL1Kj1lpMiWfeWlJ3YYaG-Cg5ajwMCLvXjx1_8uSV-KSmmTh5J6HOxOVF2N/exec',
+  repair:  'https://script.google.com/macros/s/AKfycbxewR7ivnxoYGH65baxlHrmbFjCypY_kg-nTsBuGvCUm-Z0U2W1yR_-_fEOEtp7GFMjqQ/exec',
+  replace: 'https://script.google.com/macros/s/AKfycbwBSLceXacaX3xb-mrvbj_Yfv3ERZk9tgRMxD900mSiXtDjpp0AF3NItpEu6c6StWGfng/exec'
 };
 
-// =====================================================
-//  GLOBAL DATA STORE
-// =====================================================
-let DATA = {
-  orders:  [],   // จาก order_app  ?action=getOrders
-  repairs: [],   // จาก repair_app ?action=getRepairStatus
-  replaces: [],  // จาก replace_app ?action=getMonthlyReport&yearMonth=YYYY-MM
-  loadedAt: null
-};
+// ===== SEND TO APPS SCRIPT =====
+async function sendToSheet(url, data, btnId, successMsg) {
+  const btn = document.getElementById(btnId);
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spin"></span> กำลังบันทึก...';
+  showToast('กำลังบันทึกข้อมูล...', 'loading');
 
-let allActivities = [];
-let currentActFilter = 'all';
-
-// =====================================================
-//  FETCH HELPERS
-// =====================================================
-async function fetchJSON(url, params = {}) {
-  const qs = new URLSearchParams(params).toString();
-  const fullUrl = qs ? url + '?' + qs : url;
-  const res = await fetch(fullUrl, { method: 'GET' });
-  const text = await res.text();
-  try { return JSON.parse(text); } catch { return null; }
+  try {
+    const params = new URLSearchParams(data);
+    const res = await fetch(url + '?' + params.toString(), { method: 'GET' });
+    const text = await res.text();
+    showToast(successMsg, 'success');
+    return true;
+  } catch (e) {
+    showToast('เกิดข้อผิดพลาด กรุณาลองใหม่', 'error');
+    return false;
+  } finally {
+    btn.disabled = false;
+  }
 }
 
-// =====================================================
-//  LOAD ALL DATA
-// =====================================================
-async function loadAllData() {
-  setDataStatus('loading', 'กำลังดึงข้อมูล...');
+// ===== REPAIR =====
+async function submitRepair() {
+  const machine = document.getElementById('r-machine').value.trim();
+  const problem = document.getElementById('r-problem').value.trim();
+  if (!machine) { alert('กรุณากรอกชื่อเครื่องจักร'); return; }
+  if (!problem) { alert('กรุณากรอกอาการเสีย/ปัญหา'); return; }
 
-  // Set month title
-  const now = new Date();
-  const thMonth = now.toLocaleDateString('th-TH', { month: 'long', year: 'numeric' });
-  document.getElementById('month-title').textContent = 'สรุปสถิติ ' + thMonth;
+  const data = {
+    date:     document.getElementById('r-date').value,
+    machine:  machine,
+    problem:  problem,
+    tech:     document.getElementById('r-tech').value,
+    hours:    document.getElementById('r-hours').value,
+    solution: document.getElementById('r-solution').value,
+    status:   document.getElementById('r-status').value
+  };
 
-  const ym = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0');
-
-  // ดึงข้อมูลพร้อมกัน 3 ระบบ
-  const [orderRes, repairRes, replaceRes] = await Promise.allSettled([
-    fetchJSON(SYS_URLS.order_app,   { action: 'getOrders' }),
-    fetchJSON(SYS_URLS.repair_app,  { action: 'getRepairStatus' }),
-    fetchJSON(SYS_URLS.replace_app, { action: 'getMonthlyReport', yearMonth: ym })
-  ]);
-
-  // ถ้า API ไม่ตอบกลับ JSON ที่ถูกต้อง ให้ใช้ข้อมูล demo
-  DATA.orders   = (orderRes.status   === 'fulfilled' && Array.isArray(orderRes.value))   ? orderRes.value   : getDemoOrders();
-  DATA.repairs  = (repairRes.status  === 'fulfilled' && Array.isArray(repairRes.value))  ? repairRes.value  : getDemoRepairs();
-  DATA.replaces = (replaceRes.status === 'fulfilled' && Array.isArray(replaceRes.value)) ? replaceRes.value : getDemoReplaces();
-  DATA.loadedAt = new Date();
-
-  // Render ทั้งหมด
-  renderHomeStats();
-  renderOrderStatus();
-  renderHomeActivity();
-  renderRepairTable();
-  renderOrdersTable();
-  renderReplaceTable();
-  renderRepairTab();
-  renderOrderTab();
-  renderReplaceTab();
-  renderHeroStats();
-  if (currentActFilter) renderActs(currentActFilter);
-
-  setDataStatus('ok', 'อัปเดตล่าสุด ' + DATA.loadedAt.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit' }));
+  const ok = await sendToSheet(URLS.repair, data, 'btn-repair', 'บันทึกการซ่อม "' + machine + '" สำเร็จแล้ว ✓');
+  if (ok) {
+    ['r-machine','r-problem','r-tech','r-hours','r-solution'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('btn-repair').innerHTML = '<i class="ti ti-device-floppy"></i> บันทึกการซ่อม';
+  }
 }
 
-function setDataStatus(state, text) {
-  const dot = document.getElementById('data-dot');
-  dot.className = 'data-dot' + (state === 'loading' ? ' loading' : state === 'error' ? ' error' : '');
-  document.getElementById('data-status-text').textContent = text;
+// ===== ORDER =====
+async function submitOrder() {
+  const part = document.getElementById('o-part').value.trim();
+  const qty  = document.getElementById('o-qty').value;
+  if (!part) { alert('กรุณากรอกชื่ออะไหล่'); return; }
+  if (!qty || qty < 1) { alert('กรุณากรอกจำนวน'); return; }
+
+  const data = {
+    date:     document.getElementById('o-date').value,
+    part:     part,
+    qty:      qty,
+    price:    document.getElementById('o-price').value,
+    total:    (parseFloat(qty) * parseFloat(document.getElementById('o-price').value || 0)).toFixed(2),
+    supplier: document.getElementById('o-supplier').value,
+    note:     document.getElementById('o-note').value,
+    status:   document.getElementById('o-status').value
+  };
+
+  const ok = await sendToSheet(URLS.order, data, 'btn-order', 'บันทึกคำสั่งซื้อ "' + part + '" สำเร็จแล้ว ✓');
+  if (ok) {
+    ['o-part','o-qty','o-price','o-supplier','o-note'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('o-total').textContent = '0 บาท';
+    document.getElementById('btn-order').innerHTML = '<i class="ti ti-device-floppy"></i> บันทึกคำสั่งซื้อ';
+  }
 }
 
-// =====================================================
-//  RENDER: HERO STATS
-// =====================================================
-function renderHeroStats() {
-  const totalOrders  = DATA.orders.length;
-  const pendRepairs  = DATA.repairs.length;
-  const pendingOrders = DATA.orders.filter(o => o.status !== 'ได้รับแล้ว').length;
-  const now = new Date();
-  const ym  = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0');
-  const replaceMonth = DATA.replaces.filter(r => (r.date || '').startsWith(ym)).length;
+// ===== REPLACE =====
+async function submitReplace() {
+  const machine = document.getElementById('p-machine').value.trim();
+  const part    = document.getElementById('p-part').value.trim();
+  if (!machine) { alert('กรุณากรอกชื่อเครื่องจักร'); return; }
+  if (!part)    { alert('กรุณากรอกชื่ออะไหล่ที่เปลี่ยน'); return; }
 
-  document.getElementById('hero-stats').innerHTML = `
-    <div class="hstat"><div class="hstat-val c-green">${totalOrders}</div><div class="hstat-label">สั่งอะไหล่ทั้งหมด</div></div>
-    <div class="hstat"><div class="hstat-val c-blue">${pendRepairs}</div><div class="hstat-label">งานซ่อมค้างอยู่</div></div>
-    <div class="hstat"><div class="hstat-val c-warn">${pendingOrders}</div><div class="hstat-label">รอดำเนินการ</div></div>
-    <div class="hstat"><div class="hstat-val" style="color:var(--purple)">${replaceMonth}</div><div class="hstat-label">เปลี่ยนอะไหล่เดือนนี้</div></div>
-  `;
+  const data = {
+    date:    document.getElementById('p-date').value,
+    machine: machine,
+    part:    part,
+    qty:     document.getElementById('p-qty').value,
+    tech:    document.getElementById('p-tech').value,
+    source:  document.getElementById('p-source').value,
+    next_pm: document.getElementById('p-next').value,
+    note:    document.getElementById('p-note').value
+  };
+
+  const ok = await sendToSheet(URLS.replace, data, 'btn-replace', 'บันทึกการเปลี่ยน "' + part + '" สำเร็จแล้ว ✓');
+  if (ok) {
+    ['p-machine','p-part','p-qty','p-tech','p-next','p-note'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('btn-replace').innerHTML = '<i class="ti ti-device-floppy"></i> บันทึกการเปลี่ยนอะไหล่';
+  }
 }
 
-// =====================================================
-//  RENDER: HOME SUMMARY CARDS
-// =====================================================
-function renderHomeStats() {
-  const orders  = DATA.orders;
-  const repairs = DATA.repairs;
-  const now = new Date();
-  const ym  = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0');
-  const monthReplaces = DATA.replaces.filter(r => (r.date || '').startsWith(ym));
-
-  const totalVal = orders.reduce((s, o) => s + (parseFloat(o.totalVat) || 0), 0);
-  const pendingOrders = orders.filter(o => o.status !== 'ได้รับแล้ว').length;
-  const totalQty = monthReplaces.reduce((s, r) => s + (parseInt(r.qty) || 0), 0);
-
-  set('sc-order-total', orders.length);
-  set('sc-order-sub', `ได้รับแล้ว ${orders.filter(o=>o.status==='ได้รับแล้ว').length} รายการ`);
-  set('sc-order-pending', pendingOrders);
-  set('sc-order-pending-sub', `รอซัพส่งของ ${orders.filter(o=>o.status==='รอซัพส่งของ').length} รายการ`);
-  set('sc-order-value', totalVal.toLocaleString('th-TH', {maximumFractionDigits:0}) + ' ฿');
-  set('sc-order-value-sub', `VAT 7% รวมแล้ว`);
-  set('sc-repair-pending', repairs.length);
-  set('sc-repair-sub', `เครื่องจักรรอการซ่อม`);
-  set('sc-replace-month', monthReplaces.length);
-  set('sc-replace-sub', thMonth());
-  set('sc-replace-qty', totalQty);
-  set('sc-replace-qty-sub', `ชิ้นอะไหล่รวมทั้งเดือน`);
+// ===== CALC TOTAL =====
+function calcTotal() {
+  const q = parseFloat(document.getElementById('o-qty').value) || 0;
+  const p = parseFloat(document.getElementById('o-price').value) || 0;
+  document.getElementById('o-total').textContent = (q * p).toLocaleString('th-TH', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' บาท';
 }
 
-function thMonth() {
-  return new Date().toLocaleDateString('th-TH', { month: 'long', year: 'numeric' });
+// ===== TOAST =====
+let toastTimer;
+function showToast(msg, type = 'success') {
+  const t = document.getElementById('toast');
+  const m = document.getElementById('toast-msg');
+  const ic = document.getElementById('toast-icon');
+  t.className = 'toast ' + type;
+  m.textContent = msg;
+  ic.className = type === 'loading' ? 'spin' : (type === 'error' ? 'ti ti-x' : 'ti ti-check');
+  t.style.display = 'flex';
+  clearTimeout(toastTimer);
+  if (type !== 'loading') toastTimer = setTimeout(() => t.style.display = 'none', 3000);
 }
 
-// =====================================================
-//  RENDER: ORDER STATUS BREAKDOWN
-// =====================================================
-function renderOrderStatus() {
-  const cnt = s => DATA.orders.filter(o => o.status === s).length;
-  set('st-wait',   cnt('รอเปิด PR'));
-  set('st-prwait', cnt('รออนุมัติ PR'));
-  set('st-poopen', cnt('รอเปิด PO'));
-  set('st-poappr', cnt('รออนุมัติ PO'));
-  set('st-supp',   cnt('รอซัพส่งของ'));
-  set('st-recv',   cnt('ได้รับแล้ว'));
+// ===== TABS =====
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  document.getElementById('panel-' + name).classList.add('active');
+  if (name === 'activity') renderActs('all');
 }
 
-// =====================================================
-//  RENDER: HOME ACTIVITY FEED (รวมทุกระบบ)
-// =====================================================
-function renderHomeActivity() {
-  allActivities = [];
+// ===== ACTIVITY (live data) =====
+let liveActivities = [];
+let currentFilter  = 'all';
 
-  // จาก Orders (10 ล่าสุด)
-  [...DATA.orders].sort((a,b)=>b.rowIndex-a.rowIndex).slice(0,10).forEach(o => {
-    allActivities.push({
-      type: 'order',
-      icon: 'shopping-cart',
-      title: o.item || '-',
-      sub: (o.dept || '-') + ' · PR: ' + (o.prNo || '-') + (o.vender ? ' · ' + o.vender : ''),
-      badge: orderBadgeClass(o.status),
-      btext: o.status,
-      time: fmtDate(o.orderDate || o.prDate),
-      ts: o.rowIndex
-    });
-  });
-
-  // จาก Repairs (ทั้งหมด — มักไม่เยอะ)
-  DATA.repairs.forEach(r => {
-    allActivities.push({
-      type: 'repair',
-      icon: 'tool',
-      title: 'ซ่อม: ' + (r[1] || r.machine || '-') + (r[2] ? ' (' + r[2] + ')' : ''),
-      sub: 'ช่าง: ' + (r[12] || r.tech || '-') + ' · ' + (r[13] || r.problem || ''),
-      badge: 'b-open',
-      btext: 'กำลังซ่อม',
-      time: r[5] || r.startDate || '-',
-      ts: 9999
-    });
-  });
-
-  // จาก Replaces (10 ล่าสุด)
-  [...DATA.replaces].slice(-10).reverse().forEach(r => {
-    allActivities.push({
-      type: 'replace',
-      icon: 'refresh',
-      title: 'เปลี่ยน ' + (r.part || '-') + ' · ' + (r.machine || '-'),
-      sub: 'ช่าง: ' + (r.tech || '-') + ' · ' + (r.qty || '-') + ' ชิ้น · ' + (r.type || '-'),
-      badge: 'b-purple',
-      btext: 'เปลี่ยนแล้ว',
-      time: fmtDate(r.date),
-      ts: 0
-    });
-  });
-
-  allActivities.sort((a,b) => b.ts - a.ts);
-
-  renderActs(currentActFilter, 'home-activity', 8);
-}
-
-function renderActs(filter, targetId = 'act-full', limit = 50) {
-  currentActFilter = filter;
-  const list = filter === 'all' ? allActivities : allActivities.filter(a => a.type === filter);
-  const shown = list.slice(0, limit);
-  const html = shown.length === 0
-    ? '<div style="padding:24px;text-align:center;color:var(--muted);font-size:12px">ไม่มีข้อมูล</div>'
-    : shown.map(a => `
-      <div class="act-item">
-        <div class="act-icon ai-${a.type}"><i class="ti ti-${a.icon}"></i></div>
-        <div class="act-body">
-          <div class="act-title">${esc(a.title)}</div>
-          <div class="act-sub">${esc(a.sub)}</div>
-        </div>
-        <span class="badge ${a.badge}">${esc(a.btext)}</span>
-        <div class="act-time">${esc(a.time)}</div>
-      </div>`).join('');
-  document.getElementById(targetId).innerHTML = html;
+function renderActs(filter) {
+  currentFilter = filter;
+  const list = filter === 'all' ? liveActivities : liveActivities.filter(a => a.type === filter);
+  const el   = document.getElementById('act-full');
+  if (!list.length) {
+    el.innerHTML = '<div style="text-align:center;padding:32px;color:var(--muted);font-size:13px">ไม่มีกิจกรรม</div>';
+    return;
+  }
+  el.innerHTML = list.map(a => `
+    <div class="act-item">
+      <div class="act-icon ai-${a.type}"><i class="ti ti-${a.icon}"></i></div>
+      <div class="act-body"><div class="act-title">${a.title}</div><div class="act-sub">${a.sub}</div></div>
+      <span class="badge ${a.badge}">${a.btext}</span>
+      <div class="act-time">${a.time}</div>
+    </div>`).join('');
 }
 
 function filterAct(filter, btn) {
@@ -801,326 +640,180 @@ function filterAct(filter, btn) {
   renderActs(filter);
 }
 
-// =====================================================
-//  RENDER: REPAIR TABLE (home)
-// =====================================================
-function renderRepairTable() {
-  const tbody = document.getElementById('repair-tbody');
-  if (!DATA.repairs.length) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:20px">✅ ไม่มีงานซ่อมค้างอยู่</td></tr>';
-    return;
-  }
-  tbody.innerHTML = DATA.repairs.map(r => {
-    const machine  = r[1]  || r.machine  || '-';
-    const mtype    = r[2]  || r.type     || '-';
-    const tech     = r[12] || r.tech     || '-';
-    const startD   = r[5]  || r.startDate|| '-';
-    const startT   = r[8]  || r.startTime|| '';
-    const problem  = r[13] || r.problem  || '-';
-    const elapsed  = calcElapsedClient(startD, startT);
-    const lvlClass = elapsed.totalMin >= 480 ? 'c-red' : elapsed.totalMin >= 240 ? 'c-warn' : 'c-green';
-    return `<tr>
-      <td style="font-weight:500">${esc(machine)}</td>
-      <td style="color:var(--muted)">${esc(mtype)}</td>
-      <td>${esc(tech)}</td>
-      <td style="color:var(--muted)">${esc(startD)} ${esc(startT)}</td>
-      <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(problem)}</td>
-      <td class="${lvlClass}" style="font-weight:500;white-space:nowrap">${elapsed.text}</td>
-    </tr>`;
-  }).join('');
-}
-
-// =====================================================
-//  RENDER: ORDERS TABLE (home)
-// =====================================================
-function renderOrdersTable() {
-  const tbody = document.getElementById('orders-tbody');
-  const last10 = [...DATA.orders].sort((a,b)=>b.rowIndex-a.rowIndex).slice(0,10);
-  if (!last10.length) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:20px">ไม่มีข้อมูล</td></tr>';
-    return;
-  }
-  tbody.innerHTML = last10.map(o => {
-    const val = parseFloat(o.totalVat) || 0;
-    return `<tr>
-      <td style="color:var(--muted)">${esc(o.dept||'-')}</td>
-      <td style="font-size:11px">${esc(o.prNo||'-')}</td>
-      <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(o.item||'-')}</td>
-      <td style="color:var(--muted)">${esc(o.vender||'-')}</td>
-      <td style="text-align:right;font-weight:500">${val.toLocaleString('th-TH',{minimumFractionDigits:2})}</td>
-      <td><span class="pill ${orderPillClass(o.status)}">${esc(o.status)}</span></td>
-    </tr>`;
-  }).join('');
-}
-
-// =====================================================
-//  RENDER: REPLACE TABLE (home)
-// =====================================================
-function renderReplaceTable() {
-  const tbody = document.getElementById('replace-tbody');
-  const last10 = [...DATA.replaces].slice(-10).reverse();
-  if (!last10.length) {
-    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:20px">ไม่มีข้อมูล</td></tr>';
-    return;
-  }
-  tbody.innerHTML = last10.map(r => `<tr>
-    <td style="color:var(--muted);white-space:nowrap">${esc(fmtDate(r.date))}</td>
-    <td style="font-weight:500">${esc(r.machine||'-')}</td>
-    <td style="color:var(--muted)">${esc(r.type||'-')}</td>
-    <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(r.part||'-')}</td>
-    <td style="max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)">${esc(r.reason||'-')}</td>
-    <td style="text-align:center">${esc(String(r.qty||'-'))}</td>
-    <td>${esc(r.tech||'-')}</td>
-  </tr>`).join('');
-}
-
-// =====================================================
-//  RENDER: REPAIR TAB
-// =====================================================
-function renderRepairTab() {
-  const cnt = DATA.repairs.length;
-  set('repair-pending-count', cnt + ' งาน');
-  set('repair-count-big', cnt);
-
-  // Recent list
-  document.getElementById('repair-recent-list').innerHTML = DATA.repairs.slice(0,5).map(r => `
-    <div class="recent-item">
-      <span>${esc(r[1]||r.machine||'-')} · ${esc(r[2]||r.type||'-')}</span>
-      <span class="ri-val">${esc(r[12]||r.tech||'-')} · ${esc(r[5]||r.startDate||'-')}</span>
-    </div>`).join('') || '<div style="color:var(--muted);font-size:12px;padding:8px 0">ไม่มีงานค้าง ✅</div>';
-
-  // Bars — top machines
-  const machineCnt = {};
-  DATA.repairs.forEach(r => {
-    const m = r[1] || r.machine || '?';
-    machineCnt[m] = (machineCnt[m] || 0) + 1;
-  });
-  const sorted = Object.entries(machineCnt).sort((a,b)=>b[1]-a[1]).slice(0,5);
-  const max = sorted[0] ? sorted[0][1] : 1;
-  document.getElementById('repair-bars').innerHTML = sorted.length
-    ? sorted.map(([m,v]) => `
-        <div class="bar-row">
-          <span class="bar-label">${esc(m)}</span>
-          <div class="bar-track"><div class="bar-fill" style="width:${Math.round(v/max*100)}%;background:var(--blue)"></div></div>
-          <span class="bar-pct">${v}</span>
-        </div>`).join('')
-    : '<div style="color:var(--muted);font-size:12px">ไม่มีข้อมูล</div>';
-}
-
-// =====================================================
-//  RENDER: ORDER TAB
-// =====================================================
-function renderOrderTab() {
-  const total = DATA.orders.length;
-  const recv  = DATA.orders.filter(o=>o.status==='ได้รับแล้ว').length;
-  const pend  = total - recv;
-  const val   = DATA.orders.reduce((s,o)=>s+(parseFloat(o.totalVat)||0),0);
-  const pct   = total ? Math.round(recv/total*100) : 0;
-
-  set('ord-total-side', total + ' รายการ');
-  set('ord-recv-side',  recv  + ' รายการ');
-  set('ord-pend-side',  pend  + ' รายการ');
-  set('ord-value-side', val.toLocaleString('th-TH',{maximumFractionDigits:0}) + ' ฿');
-  set('ord-pct', pct + '%');
-  document.getElementById('ord-bar').style.width = pct + '%';
-
-  // Recent list
-  document.getElementById('order-recent-list').innerHTML = [...DATA.orders].sort((a,b)=>b.rowIndex-a.rowIndex).slice(0,5).map(o => `
-    <div class="recent-item">
-      <span style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(o.item||'-')}</span>
-      <span class="ri-val"><span class="pill ${orderPillClass(o.status)}">${esc(o.status)}</span></span>
-    </div>`).join('') || '<div style="color:var(--muted);font-size:12px;padding:8px 0">ไม่มีข้อมูล</div>';
-}
-
-// =====================================================
-//  RENDER: REPLACE TAB
-// =====================================================
-function renderReplaceTab() {
-  const now = new Date();
-  const ym  = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
-  const monthData = DATA.replaces.filter(r=>(r.date||'').startsWith(ym));
-  const totalQty  = monthData.reduce((s,r)=>s+(parseInt(r.qty)||0),0);
-  const machines  = [...new Set(monthData.map(r=>r.machine).filter(Boolean))];
-
-  set('rep-count-side', monthData.length + ' รายการ');
-  set('rep-qty-side',   totalQty + ' ชิ้น');
-  set('rep-machine-side', machines.length + ' เครื่อง');
-
-  // Machine frequency bars
-  const machineCnt = {};
-  monthData.forEach(r=>{ if(r.machine){ machineCnt[r.machine]=(machineCnt[r.machine]||0)+1; } });
-  const sorted = Object.entries(machineCnt).sort((a,b)=>b[1]-a[1]).slice(0,5);
-  const max = sorted[0] ? sorted[0][1] : 1;
-  document.getElementById('replace-bars').innerHTML = sorted.length
-    ? sorted.map(([m,v])=>`
-        <div class="bar-row">
-          <span class="bar-label">${esc(m)}</span>
-          <div class="bar-track"><div class="bar-fill" style="width:${Math.round(v/max*100)}%;background:var(--purple)"></div></div>
-          <span class="bar-pct">${v}</span>
-        </div>`).join('')
-    : '<div style="color:var(--muted);font-size:12px">ไม่มีข้อมูลเดือนนี้</div>';
-
-  // Recent list
-  document.getElementById('replace-recent-list').innerHTML = [...DATA.replaces].slice(-5).reverse().map(r=>`
-    <div class="recent-item">
-      <span>${esc(r.part||'-')} · ${esc(r.machine||'-')}</span>
-      <span class="ri-val">${esc(fmtDate(r.date))} · ${esc(r.tech||'-')}</span>
-    </div>`).join('') || '<div style="color:var(--muted);font-size:12px;padding:8px 0">ไม่มีข้อมูล</div>';
-}
-
-// =====================================================
-//  HELPERS
-// =====================================================
-function set(id, val) {
+// ===== FETCH LIVE DATA FROM ALL 3 SCRIPTS =====
+function setVal(id, val) {
   const el = document.getElementById(id);
   if (el) el.textContent = val;
 }
 
-function esc(s) {
-  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function setLoading(ids) {
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) { el.innerHTML = '<span class="spin" style="width:16px;height:16px;border-width:2px"></span>'; }
+  });
 }
 
-function fmtDate(d) {
-  if (!d) return '-';
-  const p = String(d).split('-');
-  if (p.length === 3 && p[0].length === 4) return p[2]+'/'+p[1]+'/'+p[0];
-  return d;
+async function fetchJSON(url) {
+  const res = await fetch(url, { redirect: 'follow' });
+  const text = await res.text();
+  try { return JSON.parse(text); } catch(e) { return null; }
 }
 
-function orderBadgeClass(s) {
-  if (s === 'ได้รับแล้ว')   return 'b-done';
-  if (s === 'รอซัพส่งของ')  return 'b-open';
-  if (s === 'รออนุมัติ PO') return 'b-open';
-  return 'b-pending';
-}
+async function loadLiveData() {
+  setLoading(['s-repair','s-order','s-replace','s-pending',
+              'stat-repair','stat-order','stat-replace','stat-avg']);
 
-function orderPillClass(s) {
-  if (s === 'ได้รับแล้ว')   return 'pill-green';
-  if (s === 'รอซัพส่งของ')  return 'pill-blue';
-  if (s === 'รออนุมัติ PO') return 'pill-purple';
-  if (s === 'รอเปิด PO' || s === 'รออนุมัติ PR') return 'pill-warn';
-  return 'pill-gray';
-}
+  const [repairData, orderData, replaceData] = await Promise.allSettled([
+    fetchJSON(URLS.repair  + '?action=getStatus'),
+    fetchJSON(URLS.order   + '?action=getOrderSummary'),
+    fetchJSON(URLS.replace + '?action=getSummary')
+  ]);
 
-// คำนวณเวลาผ่านไป (ฝั่ง client) — ตัดอาทิตย์, จำกัด 20 ชม./วัน
-function calcElapsedClient(dateStr, timeStr) {
-  try {
-    if (!dateStr || dateStr === '-') return { totalMin: 0, text: '-' };
-    const s = String(dateStr).trim();
-    let year, month, day;
-    if (s.indexOf('/') !== -1) {
-      const p = s.split('/');
-      day = parseInt(p[0]); month = parseInt(p[1])-1; year = parseInt(p[2]);
-      if (year > 2500) year -= 543;
+  const repair  = repairData.status  === 'fulfilled' ? repairData.value  : null;
+  const order   = orderData.status   === 'fulfilled' ? orderData.value   : null;
+  const replace = replaceData.status === 'fulfilled' ? replaceData.value : null;
+
+  // ===== HERO STATS =====
+  const repairTotal   = repair  ? (repair.pendingCount  || 0) : '—';
+  const orderTotal    = order   ? (order.total          || 0) : '—';
+  const replaceTotal  = replace ? (replace.totalItems   || 0) : '—';
+  const pendingRepair = repair  ? (repair.urgentCount   || 0) : '—';
+
+  setVal('s-repair',  repairTotal);
+  setVal('s-order',   orderTotal);
+  setVal('s-replace', replaceTotal);
+  setVal('s-pending', pendingRepair);
+  setVal('s-pending-home', pendingRepair);
+
+  // ===== HOME SUMMARY CARDS =====
+  setVal('stat-repair',  repair  ? (repair.pendingCount || 0) + ' งาน'  : '—');
+  setVal('stat-order',   order   ? (order.total || 0) + ' รายการ'       : '—');
+  setVal('stat-replace', replace ? (replace.totalItems || 0) + ' รายการ': '—');
+
+  // Order value
+  if (order && order.totalValue) {
+    setVal('stat-avg', '฿' + Number(order.totalValue).toLocaleString('th-TH', {maximumFractionDigits:0}));
+  } else {
+    setVal('stat-avg', '—');
+  }
+
+  // ===== ACTIVITY FEED from live data =====
+  liveActivities = [];
+
+  if (repair && repair.recentPending) {
+    repair.recentPending.forEach(r => {
+      liveActivities.push({
+        type:'repair', icon:'tool',
+        title: 'ซ่อม ' + (r.machine || '-') + (r.type ? ' · ' + r.type : ''),
+        sub:   (r.tech || '-') + (r.problem ? ' · ' + r.problem.slice(0,30) : ''),
+        badge:'b-open', btext:'กำลังดำเนินการ',
+        time: r.startDate || ''
+      });
+    });
+  }
+
+  if (order && order.recentOrders) {
+    order.recentOrders.forEach(o => {
+      const badgeMap = {
+        'ได้รับแล้ว':'b-done','รอซัพส่งของ':'b-pending',
+        'รออนุมัติ PO':'b-open','รอเปิด PO':'b-open',
+        'รออนุมัติ PR':'b-pending','รอเปิด PR':'b-pending'
+      };
+      liveActivities.push({
+        type:'order', icon:'shopping-cart',
+        title: 'สั่ง ' + (o.item || '-'),
+        sub:   (o.dept || '') + (o.vender ? ' · ' + o.vender : ''),
+        badge: badgeMap[o.status] || 'b-open',
+        btext: o.status || '-',
+        time:  ''
+      });
+    });
+  }
+
+  if (replace && replace.recentItems) {
+    replace.recentItems.forEach(r => {
+      liveActivities.push({
+        type:'replace', icon:'refresh',
+        title: 'เปลี่ยน ' + (r.part || '-') + (r.machine ? ' · ' + r.machine : ''),
+        sub:   (r.tech || '-'),
+        badge:'b-done', btext:'เสร็จแล้ว',
+        time: r.date || ''
+      });
+    });
+  }
+
+  // sort: repair (pending) first, then others
+  liveActivities.sort((a,b) => {
+    if (a.type === 'repair' && b.type !== 'repair') return -1;
+    if (b.type === 'repair' && a.type !== 'repair') return 1;
+    return 0;
+  });
+
+  // render home activity feed
+  const homeAct = document.getElementById('activity-home');
+  if (homeAct) {
+    const preview = liveActivities.slice(0, 5);
+    if (!preview.length) {
+      homeAct.innerHTML = '<div style="text-align:center;padding:24px;color:var(--muted);font-size:13px">ยังไม่มีกิจกรรม</div>';
     } else {
-      const p = s.split('-');
-      year = parseInt(p[0]); month = parseInt(p[1])-1; day = parseInt(p[2]);
+      homeAct.innerHTML = preview.map(a => `
+        <div class="act-item">
+          <div class="act-icon ai-${a.type}"><i class="ti ti-${a.icon}"></i></div>
+          <div class="act-body"><div class="act-title">${a.title}</div><div class="act-sub">${a.sub}</div></div>
+          <span class="badge ${a.badge}">${a.btext}</span>
+          <div class="act-time">${a.time}</div>
+        </div>`).join('');
     }
-    const tp = String(timeStr||'00:00').split(':');
-    const start = new Date(year, month, day, parseInt(tp[0])||0, parseInt(tp[1])||0);
-    const end   = new Date();
-    if (end <= start) return { totalMin: 0, text: '< 1 นาที' };
+  }
 
-    let work = 0;
-    let cur  = new Date(start.getFullYear(), start.getMonth(), start.getDate());
-    while (cur < end) {
-      if (cur.getDay() !== 0) {
-        const ds = new Date(cur);
-        const de = new Date(cur.getFullYear(), cur.getMonth(), cur.getDate()+1);
-        const from = start > ds ? start : ds;
-        const to   = end   < de ? end   : de;
-        if (to > from) work += Math.min(Math.floor((to-from)/60000), 1200);
-      }
-      cur.setDate(cur.getDate()+1);
-    }
-    const h = Math.floor(work/60), m = work%60;
-    return { totalMin: work, text: (h>0?h+' ชม. ':'')+m+' นาที' };
-  } catch { return { totalMin: 0, text: '-' }; }
-}
+  // ===== ORDER SUMMARY CARDS =====
+  if (order) {
+    setVal('o-stat-total',    order.total      || 0);
+    setVal('o-stat-value',    order.totalValue ? '฿'+Number(order.totalValue).toLocaleString('th-TH',{maximumFractionDigits:0}) : '—');
+    setVal('o-stat-pending',  order.waiting    || 0);
+    setVal('o-stat-progress', order.inProgress || 0);
+    setVal('o-stat-received', order.received   || 0);
+    const recvPct = order.total ? Math.round((order.received / order.total) * 100) : 0;
+    const recvBar = document.getElementById('o-recv-bar');
+    if (recvBar) recvBar.style.width = recvPct + '%';
+    const recvPctEl = document.getElementById('o-recv-pct');
+    if (recvPctEl) recvPctEl.textContent = recvPct + '%';
+  }
 
-// =====================================================
-//  OPEN SYSTEM LINKS
-// =====================================================
-function openSystem(sys) {
-  const urls = {
-    repair:  SYS_URLS.repair_app,
-    order:   SYS_URLS.order_app,
-    replace: SYS_URLS.replace_app
-  };
-  if (urls[sys]) window.open(urls[sys], '_blank');
-}
+  // ===== REPAIR SUMMARY =====
+  if (repair) {
+    setVal('r-stat-pending', repair.pendingCount || 0);
+    const pct = repair.pendingCount ? Math.min(100, Math.round((repair.urgentCount / repair.pendingCount) * 100)) : 0;
+    const rBar = document.getElementById('r-urgent-bar');
+    if (rBar) rBar.style.width = pct + '%';
+    const rPct = document.getElementById('r-urgent-pct');
+    if (rPct) rPct.textContent = (repair.urgentCount || 0) + ' งานเร่งด่วน';
+  }
 
-// =====================================================
-//  TAB SWITCH
-// =====================================================
-function switchTab(name) {
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-  document.getElementById('tab-'+name).classList.add('active');
-  document.getElementById('panel-'+name).classList.add('active');
-  if (name === 'activity') renderActs(currentActFilter);
-}
+  // ===== REPLACE SUMMARY =====
+  if (replace) {
+    setVal('p-stat-total', replace.totalItems || 0);
+    setVal('p-stat-qty',   replace.totalQty   || 0);
+    setVal('p-stat-top',   replace.topMachine || '—');
+  }
 
-// =====================================================
-//  DEMO DATA (ใช้เมื่อ API ยังไม่ได้รับ endpoint /getOrders)
-//  — แสดงโครงสร้าง, ข้อมูลสมมติ เพื่อให้ UI ใช้งานได้
-// =====================================================
-function getDemoOrders() {
-  return [
-    {rowIndex:10,dept:'ซ่อมบำรุง',prNo:'PR-2026-010',item:'Filter HYD-10',vender:'Hydraulic Parts',qty:5,price:750,total:3750,vat:262.5,totalVat:4012.5,orderDate:'2026-06-10',prDate:'2026-06-10',prApprDate:'2026-06-11',poNo:'PO-2026-005',poOpenDate:'2026-06-11',poApprDate:'2026-06-12',recvDate:'',status:'รอซัพส่งของ'},
-    {rowIndex:9,dept:'ผลิต',prNo:'PR-2026-009',item:'V-Belt B68',vender:'Toyota Parts',qty:4,price:320,total:1280,vat:89.6,totalVat:1369.6,orderDate:'2026-06-09',prDate:'2026-06-09',prApprDate:'',poNo:'',poOpenDate:'',poApprDate:'',recvDate:'',status:'รออนุมัติ PR'},
-    {rowIndex:8,dept:'ซ่อมบำรุง',prNo:'PR-2026-008',item:'Bearing 6205',vender:'SKF Thailand',qty:10,price:250,total:2500,vat:175,totalVat:2675,orderDate:'2026-06-08',prDate:'2026-06-08',prApprDate:'2026-06-09',poNo:'PO-2026-004',poOpenDate:'2026-06-09',poApprDate:'2026-06-10',recvDate:'2026-06-12',status:'ได้รับแล้ว'},
-    {rowIndex:7,dept:'ขนส่ง',prNo:'PR-2026-007',item:'Oil Seal 45×65×10',vender:'เจริญยนต์',qty:20,price:90,total:1800,vat:126,totalVat:1926,orderDate:'2026-06-07',prDate:'2026-06-07',prApprDate:'2026-06-08',poNo:'',poOpenDate:'',poApprDate:'',recvDate:'',status:'รอเปิด PO'},
-    {rowIndex:6,dept:'ซ่อมบำรุง',prNo:'PR-2026-006',item:'Oil Filter Engine 10W-40',vender:'Honda Trading',qty:3,price:450,total:1350,vat:94.5,totalVat:1444.5,orderDate:'2026-06-05',prDate:'2026-06-05',prApprDate:'2026-06-06',poNo:'PO-2026-003',poOpenDate:'2026-06-06',poApprDate:'',poApprDate:'',recvDate:'',status:'รออนุมัติ PO'},
-    {rowIndex:5,dept:'ผลิต',prNo:'PR-2026-005',item:'หัวเทียน NGK',vender:'ยูนิตี้อะไหล่',qty:8,price:120,total:960,vat:67.2,totalVat:1027.2,orderDate:'2026-06-03',prDate:'2026-06-03',prApprDate:'2026-06-04',poNo:'PO-2026-002',poOpenDate:'2026-06-04',poApprDate:'2026-06-05',recvDate:'2026-06-10',status:'ได้รับแล้ว'},
-  ];
-}
-
-function getDemoRepairs() {
-  return [
-    ['1','CNC-01','ห้องปัก','01/06/2026','01/06/2026','05/06/2026','','09:00','08:30','','','','สมชาย','แกน X Servo Error',''],
-    ['2','ปั๊ม HY-03','โรงพิมพ์','08/06/2026','08/06/2026','10/06/2026','','10:00','10:00','','','','วิชัย','น้ำมันรั่ว Seal แตก',''],
-    ['3','มอเตอร์ 5.5kW','สโตร์ผ้า','11/06/2026','11/06/2026','11/06/2026','','14:00','14:00','','','','ประสิทธิ์','ร้อนผิดปกติ วิบอีกแล้ว',''],
-  ];
-}
-
-function getDemoReplaces() {
+  // update last-refresh time
   const now = new Date();
-  const ym = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
-  return [
-    {date:ym+'-12',time:'09:00',machine:'CNC-02',type:'ห้องปัก',part:'V-Belt B68',reason:'สายพานขาด',qty:'2',tech:'วิชัย'},
-    {date:ym+'-10',time:'11:00',machine:'ปั๊ม P-01',type:'โรงพิมพ์',part:'Bearing 6205',reason:'เสียงดัง Bearing สึก',qty:'1',tech:'สมชาย'},
-    {date:ym+'-08',time:'14:00',machine:'Gear Box #1',type:'ห้องรีด',part:'Oil Filter',reason:'ครบกำหนดเปลี่ยน',qty:'1',tech:'ประสิทธิ์'},
-    {date:ym+'-05',time:'09:30',machine:'CNC-01',type:'ห้องปัก',part:'Coolant Filter',reason:'น้ำยาขุ่น',qty:'1',tech:'สมชาย'},
-    {date:ym+'-03',time:'10:00',machine:'มอเตอร์ Line A',type:'สโตร์ผ้า',part:'หัวเทียน NGK',reason:'PM ประจำเดือน',qty:'4',tech:'วิชัย'},
-    {date:ym+'-01',time:'08:00',machine:'ปั๊ม HY-03',type:'โรงพิมพ์',part:'Oil Seal',reason:'ซีลรั่ว',qty:'2',tech:'ประสิทธิ์'},
-  ];
+  const timeStr = now.toLocaleTimeString('th-TH', {hour:'2-digit', minute:'2-digit'});
+  const refreshEl = document.getElementById('last-refresh');
+  if (refreshEl) refreshEl.textContent = 'อัปเดตล่าสุด: ' + timeStr;
 }
 
-// =====================================================
-//  TOAST
-// =====================================================
-let toastTimer;
-function showToast(msg, type = 'success') {
-  const t=document.getElementById('toast');
-  const m=document.getElementById('toast-msg');
-  const ic=document.getElementById('toast-icon');
-  t.className='toast '+type;
-  m.textContent=msg;
-  ic.className=type==='loading'?'spin':(type==='error'?'ti ti-x':'ti ti-check');
-  t.style.display='flex';
-  clearTimeout(toastTimer);
-  if(type!=='loading') toastTimer=setTimeout(()=>t.style.display='none',3000);
-}
+// ===== BAR CHART (REPAIR) — will update after data loads =====
+document.getElementById('bars-repair').innerHTML =
+  '<div style="color:var(--muted);font-size:12px;padding:8px 0">⏳ กำลังโหลดข้อมูล...</div>';
 
-// =====================================================
-//  INIT
-// =====================================================
-window.addEventListener('load', function() {
-  loadAllData();
-  // Auto-refresh ทุก 5 นาที
-  setInterval(loadAllData, 5 * 60 * 1000);
-});
+// ===== SET TODAY DATE =====
+const today = new Date().toISOString().split('T')[0];
+['r-date','o-date','p-date'].forEach(id => document.getElementById(id).value = today);
+
+// ===== INIT =====
+loadLiveData();
 </script>
 </body>
 </html>
